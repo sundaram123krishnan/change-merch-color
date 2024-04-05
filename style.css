@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 300px;
+  margin: 2rem auto;
+  position: relative;
+}
+.vector {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: color;
+}
+.shape {
+  fill: red;
+}
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  position: absolute;
+  z-index: 3;
+  bottom: 75px;
+  width: 100%;
+}
+.color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.25);
+  background-color: var(--color);
+  cursor: pointer;
+}
